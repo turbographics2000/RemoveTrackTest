@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <title>RemoveTrack test</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="style.css" rel="stylesheet">
+    <style>
+        video {
+            width: 320px;
+            height: 240px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <button id="btnStart">start</button>
+        <div>
+            <button id="btnMediaStreamRmoveAudioTrack">Remove Audio Track [MediaStream.removeTrack()]</button>
+            <button id="btnMediaStreamRemoveVideoTrack">Remove Video Track [MediaStream.removeTrack()]</button>
+        </div>
+        <div>
+            <button id="btnPeerConnectionRmoveAudioTrack">Remove Audio Track [RTCPeerConnection.removeTrack()]</button>
+            <button id="btnPeerConnectionRemoveVideoTrack">Remove Video Track [RTCPeerConnection.removeTrack()]</button>
+        </div>
+    </div>
+    <video id="selfView" autoplay></video>
+    <video id="remoteView" autoplay></video>
+    <script src="test.js"></script>
+</body>
+
+</html>
